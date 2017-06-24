@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>Molds America LLC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .jumbotron {
+      background-color: #0066CC;  /* Blue */
+      color: #FFFFFF;  /* White */
+      border-bottom: 8em solid #8C8C8C;  /* Grey */
+      margin-bottom: 0em;
+    }
+    body {
+      background-color: #8C8C8C;  /* Grey */
+    }
+    .main-content .row {
+      background-color: #E1E1E1; /* Light Grey */
+    }
+    .content-divider {
+      background-color: #0066CC;  /* Blue */
+      color: #FFFFFF;  /* White */
+    }
+    .content-image {
+      padding: 0em;
+    }
+    .content-image img {
+      height: auto;
+      width: 100%;
+    }
+    .footer {
+      background-color: #0066CC;  /* Blue */
+      color: #FFFFFF;  /* White */
+    }
+    .footer-content {
+      margin-top: 3em;
+      margin-bottom: 2em;
+      display: flex;
+      align-items: flex-end;
+    }
+    .footer-content-header {
+      text-align: right;
+    }
+    .footer-copyright {
+      color: #8C8C8C; /* Dark Grey */
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Molds America LLC</h1>
+  <p>Affordable mold filling simulations for injection molded plastic parts.</p>
+</div>
+
+
+<div class="container-fluid main-content">
+
+  <div class="row">
+    <div class="col-sm-6 text-center">
+      <h1>Part Fillings</h1>
+      <p>
+        Part filling simulations provide information about how the plastic will flow in
+        part design, flow lines, gas traps with your suggested gating location.
+        Additional simulations can be run to optimize gate location and size.
+      </p>
+    </div>
+
+    <div class="col-sm-6 content-image">
+      <img src="{{ url_for('static', filename='MALLC_Logo.PNG') }}">
+    </div>
+  </div>
+
+  <div class-"row">
+    <div class="col-sm-12 text-center content-divider">
+      <h1>Services</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 content-image">
+      <img src="{{ url_for('static', filename='MoldsAmericaFillTime.PNG') }}">
+    </div>
+
+    <div class="col-sm-6 text-center">
+      <h1>Mold Fillings</h1>
+
+      <p>
+        Mold filling simulations help determine if the part will fill with the proposed
+        gate location and aid in checking that the cavity fill is balanced -- very important
+        for family tools.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 text-center">
+      <h1>Complementary Presentation</h1>
+
+      <p>
+        Each simulation will have a full presentation that you can use to discuss with your
+        clients. This interaction will help to keep your clients involved in the design or
+        tooling process. Contact us if you would like to view a sample presentation.
+      </p>
+    </div>
+
+    <div class="col-sm-6 content-image">
+      <img src="{{ url_for('static', filename='MoldsAmericaTempEndCool.PNG') }}">
+    </div>
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <div class="container">
+
+    <div class="row footer-content">
+      <div class="col-md-3 footer-content-header">
+        <h3>Contact us.</h3>
+      </div>
+
+
+      <div class="col-md-6 col-md-offset-1">
+        <p>contact@moldsamerica.com</p>
+      </div>
+    </div>
+
+    <div class="row text-center footer-copyright">
+      <p>Copyright &copy; 2017 Molds America LLC. All rights Reserved.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
