@@ -26,7 +26,7 @@
 
     /* ABOUT */
     #about-content {
-      background-color: #E1E1E1; /* Light Grey */
+      background-color: #F8F8F8; /* Lighter Grey */
       padding-top: 3em;
       padding-bottom: 3em;
     }
@@ -49,8 +49,15 @@
     }
 
     /* SERVICES ITEMS */
-    .main-content .row {
+    .services-item {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    .services-item:nth-child(even) {
       background-color: #E1E1E1; /* Light Grey */
+    }
+    .services-item:nth-child(odd) {
+      background-color: #F8F8F8; /* Lighter Grey */
     }
     .content-image {
       padding: 0em;
@@ -124,55 +131,69 @@
 </div>
 
 
-<div class="container-fluid main-content">
+<div class="services-item">
+  <div class="container">
+    <div class="row">
 
-  <div class="row">
-    <div class="col-sm-6 text-center">
-      <h1>Part Fillings</h1>
-      <p>
-        Part filling simulations provide information about how the plastic will flow in
-        part design, flow lines, gas traps with your suggested gating location.
-        Additional simulations can be run to optimize gate location and size.
-      </p>
-    </div>
+      <div class="col-sm-6 text-center">
+        <h2>Part Fillings</h2>
+        <p>
+          Part filling simulations provide information about how the plastic will flow in
+          part design, flow lines, gas traps with your suggested gating location.
+          Additional simulations can be run to optimize gate location and size.
+        </p>
+      </div>
 
-    <div class="col-sm-6 content-image">
-      <img src="{{ url_for('static', filename='MALLC_Logo.PNG') }}">
-    </div>
-  </div>
+      <div class="col-sm-6 content-image">
+        <img src="{{ url_for('static', filename='MALLC_Logo.PNG') }}">
+      </div>
 
-  <div class="row">
-    <div class="col-sm-6 content-image">
-      <img src="{{ url_for('static', filename='MoldsAmericaFillTime.PNG') }}">
-    </div>
-
-    <div class="col-sm-6 text-center">
-      <h1>Mold Fillings</h1>
-
-      <p>
-        Mold filling simulations help determine if the part will fill with the proposed
-        gate location and aid in checking that the cavity fill is balanced -- very important
-        for family tools.
-      </p>
     </div>
   </div>
+</div>
 
-  <div class="row">
-    <div class="col-sm-6 text-center">
-      <h1>Complementary Presentation</h1>
 
-      <p>
-        Each simulation will have a full presentation that you can use to discuss with your
-        clients. This interaction will help to keep your clients involved in the design or
-        tooling process. Contact us if you would like to view a sample presentation.
-      </p>
-    </div>
+<div class="services-item">
+  <div class="container">
+    <div class="row">
 
-    <div class="col-sm-6 content-image">
-      <img src="{{ url_for('static', filename='MoldsAmericaTempEndCool.PNG') }}">
+      <div class="col-sm-6 content-image">
+        <img src="{{ url_for('static', filename='MoldsAmericaFillTime.PNG') }}">
+      </div>
+
+      <div class="col-sm-6 text-center">
+        <h2>Mold Fillings</h2>
+        <p>
+          Mold filling simulations help determine if the part will fill with the proposed
+          gate location and aid in checking that the cavity fill is balanced -- very important
+          for family tools.
+        </p>
+      </div>
+
     </div>
   </div>
+</div>
 
+
+<div class="services-item">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-6 text-center">
+        <h2>Complementary Presentation</h2>
+        <p>
+          Each simulation will have a full presentation that you can use to discuss with your
+          clients. This interaction will help to keep your clients involved in the design or
+          tooling process. Contact us if you would like to view a sample presentation.
+        </p>
+      </div>
+
+      <div class="col-sm-6 content-image">
+        <img src="{{ url_for('static', filename='MoldsAmericaTempEndCool.PNG') }}">
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
