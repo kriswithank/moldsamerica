@@ -20,16 +20,22 @@
     .jumbotron {
       background-color: #0066CC;  /* Blue */
       color: #FFFFFF;  /* White */
-      border-bottom: 8em solid #8C8C8C;  /* Grey */
+      border-bottom: 8em solid #8C8C8C;  /* Dark Grey */
       margin-bottom: 0em;
     }
 
     /* ABOUT */
     #about-content {
       background-color: #E1E1E1; /* Light Grey */
+      padding-top: 3em;
+      padding-bottom: 3em;
     }
     #about-content h2 {
       text-align: center;
+      display: block;
+      padding-top: 1.5em;
+      padding-bottom: 0.2em;
+      border-bottom: 1px solid #8C8C8C;  /* Dark Grey */
     }
     #about-content img {
       height: auto;
@@ -88,7 +94,11 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-6">
+      <div class="col-md-6 col-md-push-6">
+        <img src="{{ url_for('static', filename='MALLC_Logo.PNG') }}">
+      </div>
+
+      <div class="col-md-6 col-md-pull-6">
         <h2>Discover issues and streamline your molding process</h2>
 
         <p>
@@ -98,10 +108,6 @@
           insight you need to confidently evaluate your production process.
           And best of all, we're cost effective.
         </p>
-      </div>
-
-      <div class="col-md-6">
-        <img src="{{ url_for('static', filename='MALLC_Logo.PNG') }}">
       </div>
 
     </div>
