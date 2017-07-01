@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Define environment variable
-ENV FLASK_APP "moldsamerica/app.py"
+ENV FLASK_APP "app.py"
 ENV FLASK_DEBUG "True"
 
 # Run app.py when the container launches
