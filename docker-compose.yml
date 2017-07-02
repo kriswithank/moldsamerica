@@ -4,5 +4,3 @@ version: '3'
 services:
   moldsamerica-service:
     build: ./moldsamerica
-    ports:
-      - 5000:5000

@@ -4,3 +4,5 @@ services:
   moldsamerica-service:
     volumes:
       - ./moldsamerica:/app
+    ports:
+      - 5000:5000
