@@ -1,7 +1,7 @@
 # moldsamerica
 
 
-##Instructions to run:
+## Instructions to run:
 
 Make sure that docker and docker-compose are installed and of a recent version. Then it's
 simply a matter of running one of the two commands.
@@ -28,6 +28,4 @@ Next stop the container that is running.
 
 ```docker-compose down```
 
-Finally push up the latest image by running the server for production (see above).
-
-```docker-compose -f docker-compose.yml ...```
+Finally push up the latest image by running the server for production (see above ```docker-compose -f docker-compose.yml ...```)
