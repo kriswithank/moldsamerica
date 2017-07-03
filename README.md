@@ -1,7 +1,7 @@
 # moldsamerica
 
 
-## Instructions to run:
+## Instructions to run
 
 Make sure that docker and docker-compose are installed and of a recent version. Then it's
 simply a matter of running one of the two commands.
