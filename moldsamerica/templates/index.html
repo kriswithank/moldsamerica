@@ -11,22 +11,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+    /* VARIABLES */
+    :root{
+      --dark-grey: #8C8C8C;
+      --light-grey: #F8F8F8;
+      --white: #FFFFFF;
+      --blue: #0066CC;
+    }
+
     /* BASIC */
     body {
-      background-color: #8C8C8C;  /* Grey */
+      background-color: var(--dark-grey);
     }
 
     /* HEADER */
     .jumbotron {
-      background-color: #0066CC;  /* Blue */
-      color: #FFFFFF;  /* White */
-      border-bottom: 8em solid #8C8C8C;  /* Dark Grey */
+      background-color: var(--blue);
+      color: var(--white);
+      border-bottom: 8em solid var(--dark-grey);
       margin-bottom: 0em;
     }
 
     /* ABOUT */
     #about-content {
-      background-color: #F8F8F8; /* Lighter Grey */
+      background-color: var(--light-grey);
       padding-top: 3em;
       padding-bottom: 3em;
     }
@@ -35,7 +43,7 @@
       display: block;
       padding-top: 1.5em;
       padding-bottom: 0.2em;
-      border-bottom: 1px solid #8C8C8C;  /* Dark Grey */
+      border-bottom: 1px solid var(--dark-grey);
     }
     #about-content img {
       height: auto;
@@ -47,7 +55,7 @@
     #about-content .glyphicon {
       display: block;
       padding-top: 0.5em;
-      border-top: 1px solid #8C8C8C;  /* Dark Grey */
+      border-top: 1px solid var(--dark-grey);
       text-align: center;
       font-size: 3.5em;
     }
@@ -64,8 +72,8 @@
 
     /* SERVICES HEADER */
     #services-divider {
-      background-color: #0066CC;  /* Blue */
-      color: #FFFFFF;  /* White */
+      background-color: var(--blue);
+      color: var(--white);
     }
 
     /* SERVICES ITEMS */
@@ -77,13 +85,13 @@
       text-align: center;
       padding-top: 1.5em;
       padding-bottom: 0.2em;
-      border-bottom: 1px solid #8C8C8C;  /* Dark Grey */
+      border-bottom: 1px solid var(--dark-grey);
     }
     .services-item:nth-child(even) {
-      background-color: #E1E1E1; /* Light Grey */
+      background-color: var(--light-grey);
     }
     .services-item:nth-child(odd) {
-      background-color: #F8F8F8; /* Lighter Grey */
+      background-color: var(--light-grey);
     }
     .content-image {
       padding: 0em;
@@ -95,8 +103,8 @@
 
     /* FOOTER */
     .footer {
-      background-color: #0066CC;  /* Blue */
-      color: #FFFFFF;  /* White */
+      background-color: var(--blue);
+      color: var(--white);
     }
     .footer-content {
       margin-top: 3em;
@@ -108,7 +116,7 @@
       text-align: right;
     }
     .footer-copyright {
-      color: #E1E1E1; /* Light Grey */
+      color: var(--light-grey);
       text-align: center;
     }
   </style>
