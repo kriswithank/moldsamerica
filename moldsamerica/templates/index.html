@@ -5,11 +5,14 @@
 <head>
   <title>Molds America LLC</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <style>{% include 'style.css' %}</style>
 </head>
 
@@ -17,7 +20,7 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Molds America LLC</h1>
+  <h1 class="display-4">Molds America LLC</h1>
   <p>Affordable mold filling simulations for injection molded plastic parts.</p>
 </div>
 
@@ -27,11 +30,11 @@
 
     <div class="row">
 
-      <div class="col-md-6 col-md-push-6">
+      <div class="col-md order-md-2">
         <img src="{{ url_for('static', filename='MALLC_Logo.png') }}">
       </div>
 
-      <div class="col-md-6 col-md-pull-6">
+      <div class="col-md order-md-1">
         <h2>Discover issues and streamline your molding process</h2>
 
         <p>
@@ -46,24 +49,31 @@
     </div>
 
     <div class="row icons">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-search"></span>
+      <div class="col-sm">
+        <div class="icon">
+          <i class="fas fa-search"></i>
+        </div>
         <h3>Discover hidden problems in your parts</h3>
       </div>
 
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-stats"></span>
+      <div class="col-sm">
+        <div class="icon">
+          <i class="far fa-chart-bar"></i>
+        </div>
         <h3>Gain insight into your production process</h3>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm">
+        <div class="icon">
+          <i class="fas fa-wrench"></i>
+        </div>
         <span class="glyphicon glyphicon-wrench"></span>
         <h3>Fix issues before they occur</h3>
       </div>
     </div>
 
     <div class="row animation">
-      <div class="col-sm-12">
+      <div class="col">
         <img src="{{ url_for('static', filename='CircleGIFWeldAir.gif') }}">
       </div>
     </div>
@@ -85,7 +95,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-6 col-sm-push-6 text-center">
+      <div class="col-md order-md-2 text-center">
         <h2>Part Fillings</h2>
         <p>
           Part filling simulations provide information about how the plastic will flow in
@@ -94,7 +104,7 @@
         </p>
       </div>
 
-      <div class="col-sm-6 col-sm-pull-6 content-image">
+      <div class="col-md order-md-1 content-image">
         <img src="{{ url_for('static', filename='FillTime.png') }}">
       </div>
 
@@ -107,7 +117,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-6 text-center">
+      <div class="col-md text-center">
         <h2>Mold Fillings</h2>
         <p>
           Mold filling simulations help determine if the part will fill with the proposed
@@ -116,7 +126,7 @@
         </p>
       </div>
 
-      <div class="col-sm-6 content-image">
+      <div class="col-md content-image">
         <img src="{{ url_for('static', filename='ShearStressEndFill.png') }}">
       </div>
 
@@ -129,7 +139,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-6 col-sm-push-6 text-center">
+      <div class="col-md order-md-2 text-center">
         <h2>Complementary Presentation</h2>
         <p>
           Each simulation will have a full presentation that you can use to discuss with your
@@ -138,7 +148,7 @@
         </p>
       </div>
 
-      <div class="col-sm-6 col-sm-pull-6 content-image">
+      <div class="col-md order-md-1 content-image">
         <img src="{{ url_for('static', filename='VolumetricShrinkageEndFill.png') }}">
       </div>
 
@@ -150,19 +160,19 @@
 <div class="footer">
   <div class="container">
 
-    <div class="row footer-content">
-      <div class="col-md-3 footer-content-header">
+    <div class="row align-items-end footer-content">
+      <div class="col-sm-3 footer-content-header">
         <h3>Contact us.</h3>
       </div>
 
 
-      <div class="col-md-6 col-md-offset-1">
+      <div class="col-sm offset-md-1">
         <p>info@moldsamerica.com</p>
       </div>
     </div>
 
     <div class="row text-center footer-copyright">
-      <p>Copyright &copy; 2017 Molds America LLC. All rights Reserved.</p>
+      <p class="small">Copyright &copy; 2017 Molds America LLC. All rights Reserved.</p>
     </div>
 
   </div>
