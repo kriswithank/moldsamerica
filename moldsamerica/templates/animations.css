@@ -1,0 +1,13 @@
+/* VARIABLES */
+:root {
+  --slide-up-duration: 0.6s;
+  --slide-side-duration:0.7s;
+}
+.animateSlideInUp {
+  -webkit-animation-duration: var(--slide-up-duration);
+  animation-duration: var(--slide-up-duration);
+}
+.animateSlideInLeft {
+  -webkit-animation-duration: var(--slide-side-duration);
+  animation-duration: var(--slide-side-duration);
+}
