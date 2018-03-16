@@ -77,10 +77,10 @@ body {
   border-bottom: 1px solid var(--dark-grey);
 }
 .services-item:nth-child(even) {
-  background-color: var(--light-grey);
+  background-color: var(--lighter-grey);
 }
 .services-item:nth-child(odd) {
-  background-color: var(--lighter-grey);
+  background-color: var(--light-grey);
 }
 .content-image {
   padding: 0em;
