@@ -16,7 +16,7 @@ body {
 .jumbotron {
   background-color: var(--blue);
   color: var(--white);
-  border-bottom: 8em solid var(--dark-grey);
+  border-bottom: 6em solid var(--dark-grey);
   margin-bottom: 0em;
 }
 
