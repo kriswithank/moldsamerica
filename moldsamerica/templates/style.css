@@ -40,8 +40,7 @@ body {
 #about-content .row:first-child {
   margin-bottom: 4em;
 }
-#about-content .glyphicon {
-  display: block;
+#about-content .icon {
   padding-top: 0.5em;
   border-top: 1px solid var(--dark-grey);
   text-align: center;
