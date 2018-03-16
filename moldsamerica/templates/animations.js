@@ -26,10 +26,12 @@ function animateInView() {
   var windowTopPos = $window.scrollTop();
   var windowBottomPos = (windowTopPos + windowHeight);
 
-  animateElemsInRange($('.animateSlideInUp'), windowTopPos,
-    windowBottomPos, 'animated slideInUp');
   animateElemsInRange($('.animateSlideInLeft'), windowTopPos,
     windowBottomPos, 'animated slideInLeft');
   animateElemsInRange($('.animateSlideInRight'), windowTopPos,
     windowBottomPos, 'animated slideInRight');
+  // Only display slide up animatiosn when scrolling down wait until
+  // obj is further up on page to animate
+  animateElemsInRange($('.animateSlideInUp'), 0,
+    windowBottomPos - 20, 'animated slideInUp');
 }
