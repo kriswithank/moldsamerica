@@ -61,6 +61,8 @@ body {
 #services-divider {
   background-color: var(--blue);
   color: var(--white);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* SERVICES ITEMS */
